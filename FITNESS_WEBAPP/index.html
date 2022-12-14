@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness Stop!</title>
+    
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Dancing+Script&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body{
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/pic2.jpg');
+        /* height: 3000px; */
+        /* background-repeat: no-repeat; */
+    }
+
+    .left{
+        position: absolute;
+        top: 12px;
+        left: 10px;
+        display: inline-block;
+        border: 2px solid red;
+        
+    }
+
+    .left img{
+        width:80px;
+        /* filter:brightness(100%) */
+    }
+    .left div{
+        line-height: 19px;
+        text-align: center;
+        /* line-height: 1px; */
+        font-size: 20px;
+    }
+
+    .mid{
+        display: block;
+        width: 55%;
+        height: 9%;
+        margin: 10px auto;
+        /* border: 1px solid rgb(98, 239, 101); */
+        padding:2px;
+    }
+
+    .right{
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        display: inline-block;
+        /* border: 2px solid rgb(232, 208, 20); */
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a { 
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+    .navbar li a:hover , .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+     
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;    /* vertically horizontally */
+        border: 2px solid red;
+        border-radius: 10px;
+        font-size: 10px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .btn:hover{
+        background-color: rgb(59, 55, 55);
+    }
+
+    .container{
+        border: 2px solid white;
+        margin: 80px 10px;
+        padding: 0px 75px;
+        width: 20%;
+        border-radius: 28px;
+    }
+
+    .container h1{
+        text-align:center;    
+    }
+
+    
+    .form-group input{
+        font-family: 'Baloo Bhai 2', cursive;
+        text-align: center;
+        display: block;
+        width: 194px;
+        padding: 5px;
+        margin: 3px auto;
+        border: 2px solid black;
+        font-size: 10px;
+        color: rgb(27, 24, 24);
+        border-radius: 10px;
+
+    }
+
+    .container button{
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding-top: 2px;
+        margin: 10px auto;
+       
+
+
+        
+    }
+    </style>
+    
+<body>
+     <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo2.png" alt="Loading">
+            <div>My Fitness Stop!</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Fitness Calculator</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+              <button class="btn">Call Us Now</button>
+              <button class="btn">Email</button>
+        </div>
+     </header>
+
+     <div class="container">
+        
+        <h1>Join the best gym of banjara hills now...</h1>
+        <form action="noaction.php">   
+            <!-- noaction.php is a backend for example -->
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+
+        </form>
+     </div>
+    </body>
+</html>
